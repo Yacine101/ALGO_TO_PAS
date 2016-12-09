@@ -1,0 +1,55 @@
+.text-field  
+{  
+    -fx-background-color: transparent, white, transparent, white;  
+    -fx-borders-color:white;
+    -fx-background-radius: 0, 0, 0, 0; 
+    -fx-padding: 0.166667em;  
+}  
+.tex 
+{  
+    -fx-background-color: #202020;  
+    
+}
+
+
+.Menu-item 
+{  
+    -fx-background-color:#000000;
+    -fx-font-size: 13px;
+    -fx-font-family: arial, cursive;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffe0;
+    
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+} 
+.Tool-bar{
+     -fx-background-color:#808080;
+   
+     -fx-background-radius: 30;  
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );   
+}
+.buckground {
+    -fx-background-color: #9f9f9f;
+    -fx-background-insets: 0;   
+}
+
+.plus{
+    -fx-background-radius: 30;   
+}
+
+.welcome-text {
+   -fx-font-size: 20px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+.actiontarget {
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
+.hide{
+    -fx-background-color:#ffffff;
+    
+    
+}

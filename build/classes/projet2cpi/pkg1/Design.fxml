@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0x000000ff?>
+<?scenebuilder-stylesheet Design.css?>
+<!-- 
+Le fichier FXML qui est un builder le la scéne de javaFX .
+Im initialise une interface de travail n language balisé et difinie ces identifiateur pour etre controller de la classe DesignController
+-->
+
+<AnchorPane id="AnchorPane" fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="1000.0" styleClass="buckground" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="projet2cpi.pkg1.DesignController">
+  <children>
+    <MenuBar id="menu" cache="true" cacheHint="DEFAULT" depthTest="INHERIT" disable="false" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="1.0" prefHeight="27.0" prefWidth="1000.0" rotate="0.0" style="-fx-background-color:grey;&#10;&#10;&#10;&#10;&#10;" styleClass="Menu-item, plus" useSystemMenuBar="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Fichier">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#nouveauFX" text="Nouveau" />
+            <MenuItem mnemonicParsing="false" onAction="#ouvrirFX" text="Ouvrir" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#enregistrerFX" text="Enregistrer" />
+            <MenuItem mnemonicParsing="false" onAction="#enregSousFX" text="Enregistrer sous" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#quitterFX" text="Quitter" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edition">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#traduireFX" text="traduire" />
+            <MenuItem mnemonicParsing="false" onAction="#devpas" text="traduire et exporter" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Aide">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#aproposFX" text="A propos" />
+            <MenuItem mnemonicParsing="false" onAction="#aideFX" text="Aide en ligne" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <ToolBar minHeight="32.0" prefHeight="38.0" prefWidth="1000.0" styleClass="buckground" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+      <items>
+        <Button fx:id="nouveau" mnemonicParsing="false" onAction="#nouveauFX" prefHeight="32.0" prefWidth="43.000099999997474" styleClass="Tool-bar" text="" />
+        <Button fx:id="ouvrir" mnemonicParsing="false" onAction="#ouvrirFX" prefHeight="32.0" prefWidth="43.0" styleClass="Tool-bar" text="" />
+        <Button fx:id="enreg" mnemonicParsing="false" onAction="#enregistrerFX" prefHeight="32.0" prefWidth="43.0" styleClass="Tool-bar" text="" />
+        <Button fx:id="enregSous" mnemonicParsing="false" onAction="#enregSousFX" prefHeight="32.0" prefWidth="43.0" styleClass="Tool-bar" text="" />
+        <Button fx:id="traduire" mnemonicParsing="false" onAction="#traduireFX" prefHeight="32.0" prefWidth="43.0" styleClass="Tool-bar" text="" />
+        <Button fx:id="devpascal" mnemonicParsing="false" onAction="#devpas" prefHeight="27.0" prefWidth="44.0" styleClass="Tool-bar" text="" />
+      </items>
+    </ToolBar>
+    <TabPane fx:id="tabPane1" prefHeight="494.0" prefWidth="999.9999000000025" styleClass="plus" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+      <tabs>
+        <Tab fx:id="tabModel" styleClass="plus" text="Accueil">
+          <content>
+            <AnchorPane id="Content" fx:id="ContentModel" minHeight="0.0" minWidth="0.0" prefHeight="406.0" prefWidth="1000.0">
+              <children>
+                <Pane prefHeight="463.0" prefWidth="1216.0" styleClass="tex" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-216.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <ImageView fitHeight="1100.0" fitWidth="1400.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../../dr.jpg" />
+                      </image>
+                    </ImageView>
+                    <ImageView fitHeight="276.2328192483648" fitWidth="503.33331298828125" layoutX="421.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@../../logo.png" />
+                      </image>
+                    </ImageView>
+                  </children>
+                </Pane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+  <stylesheets>
+    <URL value="@Design.css" />
+  </stylesheets>
+</AnchorPane>
