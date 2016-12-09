@@ -1,4 +1,4 @@
-# Algo to Pascal
+# Algo to Pascal.
 # AlgoPas : Your first steps to Algorithmic 
 
 ![Alt text](/images/LOGO.png?raw=true "Optional Title")
